@@ -34,8 +34,8 @@
             width: 80%;
           
             &[type="checkbox"] {
-              width: 5rem; /* Largeur */
-              height: 5rem; /* Hauteur */
+              width: 5rem;
+              height: 5rem; 
             }
           }
   
@@ -61,13 +61,13 @@
         text-align: left;
         margin-bottom: 0;
         width: 80%;
-        justify-content: center; // Pour centrer verticalement les éléments dans la liste
+        justify-content: center;
         
       
         ul {
           li {
-            display: flex; // Pour permettre le positionnement des éléments à l'intérieur du <li>
-            align-items: center; // Pour centrer verticalement les éléments dans le <li>
+            display: flex; 
+            align-items: center;
             width: 100%;
             margin-top: 3%;
             line-height: 3rem;
@@ -81,13 +81,13 @@
             }
       
             input {
-              // Ajoutez les styles nécessaires pour l'input si nécessaire
+              
             }
       
             label {
               font-size: 1.3rem;
-              flex: 1; // Pour que le texte prenne autant d'espace que possible
-              margin-right: 1rem; // Pour ajouter un espace entre le texte et l'icône
+              flex: 1; 
+              margin-right: 1rem; 
             }
           }
         }
@@ -98,8 +98,8 @@
 
 
       input[type="checkbox"] {
-        width: 1rem; /* Largeur */
-        height: 1rem; /* Hauteur */
+        width: 1rem; 
+        height: 1rem; 
         margin-right: 2%;
         cursor: pointer;
       }

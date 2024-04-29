@@ -32,8 +32,8 @@ main .todo-list #form input {
   width: 80%;
 }
 main .todo-list #form input[type=checkbox] {
-  width: 5rem; /* Largeur */
-  height: 5rem; /* Hauteur */
+  width: 5rem;
+  height: 5rem;
 }
 main .todo-list #form button {
   border: 1px solid transparent;
@@ -69,8 +69,8 @@ main .todo-list .list-item ul li label {
   margin-right: 1rem;
 }
 main .todo-list input[type=checkbox] {
-  width: 1rem; /* Largeur */
-  height: 1rem; /* Hauteur */
+  width: 1rem;
+  height: 1rem;
   margin-right: 2%;
   cursor: pointer;
 }
