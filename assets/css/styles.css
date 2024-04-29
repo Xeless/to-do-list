@@ -9,9 +9,25 @@
   font-weight: 400;
 }
 
+[type=checkbox] {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+[type=checkbox]:checked {
+  background: lightgreen;
+}
+
 body {
   width: 100%;
-  background-color: rgb(54, 61, 69);
+  background: linear-gradient(to right, #1db1dd, #23d0d2);
 }
 
 main {
@@ -28,6 +44,7 @@ main .todo-list {
   margin-top: 10%;
   background: white;
   border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 main .todo-list #form {
   justify-content: center;
@@ -40,12 +57,7 @@ main .todo-list #form input {
   border-radius: 15px;
   padding: 2%;
 }
-main .todo-list #form input[type=checkbox] {
-  width: 5rem;
-  height: 5rem;
-}
 main .todo-list #form button {
-  position: absolute;
   width: 5vw;
   height: 6vh;
   top: 32.3%;
@@ -76,7 +88,8 @@ main .todo-list .list-item ul li {
   padding: 2%;
   border-radius: 15px;
 }
-main .todo-list .list-item ul li .fa-solid, main .todo-list .list-item ul li .fas {
+main .todo-list .list-item ul li .fa-solid,
+main .todo-list .list-item ul li .fas {
   font-size: 1.2rem;
   cursor: pointer;
 }
