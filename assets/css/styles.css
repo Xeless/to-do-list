@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 body {
   width: 100%;
+  background-color: rgb(54, 61, 69);
 }
 
 main {
@@ -16,23 +20,24 @@ main {
 }
 main .todo-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   width: 60%;
   height: auto;
+  padding: 5%;
   margin-top: 10%;
+  background: white;
+  border-radius: 16px;
 }
 main .todo-list #form {
   justify-content: center;
   display: flex;
   width: 90%;
+  margin-top: 3%;
 }
 main .todo-list #form input {
   width: 80%;
   border-radius: 15px;
-  background-color: black;
-  color: white;
   padding: 2%;
 }
 main .todo-list #form input[type=checkbox] {
@@ -40,10 +45,15 @@ main .todo-list #form input[type=checkbox] {
   height: 5rem;
 }
 main .todo-list #form button {
+  position: absolute;
+  width: 5vw;
+  height: 6vh;
+  top: 32.3%;
+  right: 32%;
   border: 1px solid transparent;
   background: #007bff;
-  border-radius: 15px;
-  padding: 0.7rem 1.5rem;
+  border-radius: 16px;
+  padding: 0.8%;
   color: white;
   margin-left: 0.3%;
   cursor: pointer;
@@ -53,7 +63,7 @@ main .todo-list .list-item {
   flex-direction: column;
   text-align: left;
   margin-bottom: 0;
-  width: 80%;
+  width: 85%;
   justify-content: center;
 }
 main .todo-list .list-item ul li {
@@ -62,7 +72,9 @@ main .todo-list .list-item ul li {
   width: 100%;
   margin-top: 3%;
   line-height: 3rem;
-  border-bottom: 1px solid lightgray;
+  border: 1px solid lightgray;
+  padding: 2%;
+  border-radius: 15px;
 }
 main .todo-list .list-item ul li .fa-solid, main .todo-list .list-item ul li .fas {
   font-size: 1.2rem;
@@ -88,6 +100,9 @@ main .todo-list input[type=checkbox] {
   main .todo-list {
     margin-top: 0;
     width: 100%;
+  }
+  main button {
+    display: none;
   }
   main .list-item {
     margin-top: 5%;

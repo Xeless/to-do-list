@@ -17,6 +17,11 @@ window.addEventListener("load", function(){
 export function addTask(taskContent) {
 
   const li = document.createElement("li");
+
+  const couleurBackgroundLi =  ["#1f82f2", "#617e8c"];
+  const couleurIndex = Math.floor(Math.random()*2)
+  const couleurRandom = couleurBackgroundLi[couleurIndex]
+  li.style.backgroundColor = couleurRandom
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox"; 
   checkbox.addEventListener("change", function () {
