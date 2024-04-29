@@ -23,6 +23,7 @@
 
 [type=checkbox]:checked {
   background: lightgreen;
+  text-decoration: line-through;
 }
 
 body {
@@ -42,9 +43,9 @@ main .todo-list {
   height: auto;
   padding: 5%;
   margin-top: 10%;
-  background: white;
+  background: #FAF3E0;
   border-radius: 16px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 main .todo-list #form {
   justify-content: center;
@@ -78,6 +79,10 @@ main .todo-list .list-item {
   width: 85%;
   justify-content: center;
 }
+main .todo-list .list-item input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+  color: red;
+}
 main .todo-list .list-item ul li {
   display: flex;
   align-items: center;
@@ -97,6 +102,7 @@ main .todo-list .list-item ul li label {
   font-size: 1.3rem;
   flex: 1;
   margin-right: 1rem;
+  color: white;
 }
 main .todo-list input[type=checkbox] {
   width: 1rem;
