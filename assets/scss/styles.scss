@@ -22,8 +22,6 @@
       width: 60%;
       height: auto;
       margin-top: 10%;
-
-  
       #form {
         justify-content: center;
         display: flex;
@@ -32,7 +30,11 @@
 
         input {
             width: 80%;
-          
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            padding: 2%;
+
             &[type="checkbox"] {
               width: 5rem;
               height: 5rem; 
@@ -42,9 +44,10 @@
         button {
           border: 1px solid transparent;
           background: #007bff;
+          border-radius: 15px;
           padding: .7rem 1.5rem;
           color: white;
-          margin-left: 1%;
+          margin-left: 0.3%;
           cursor: pointer;
         }
       }

@@ -30,6 +30,10 @@ main .todo-list #form {
 }
 main .todo-list #form input {
   width: 80%;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  padding: 2%;
 }
 main .todo-list #form input[type=checkbox] {
   width: 5rem;
@@ -38,9 +42,10 @@ main .todo-list #form input[type=checkbox] {
 main .todo-list #form button {
   border: 1px solid transparent;
   background: #007bff;
+  border-radius: 15px;
   padding: 0.7rem 1.5rem;
   color: white;
-  margin-left: 1%;
+  margin-left: 0.3%;
   cursor: pointer;
 }
 main .todo-list .list-item {
